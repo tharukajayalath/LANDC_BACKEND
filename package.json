@@ -1,0 +1,27 @@
+{
+  "name": "landcbackend",
+  "version": "1.0.0",
+  "description": "This is the backend of L and C delivery services mobile app",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "server": "node src/server.js"
+  },
+  "author": "Tharuka Jayalath",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "file-system": "^2.2.2",
+    "log4js": "^2.7.0",
+    "mysql": "^2.15.0",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "rotating-file-stream": "^1.3.6",
+    "url": "^0.11.0",
+    "validator": "^10.2.0"
+  }
+}
