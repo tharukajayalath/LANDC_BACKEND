@@ -1,6 +1,7 @@
 /**
  * Created by Tharuka Jayalath on 05/28/2018
  */
+/*
 const config = require('../../config');
 const FILE = require('path').basename(__filename);
 const logger = require('../../logger').getLogger({},{fileName: FILE});
@@ -51,3 +52,4 @@ module.exports = {
     set: set,
     get: get
 };
+*/

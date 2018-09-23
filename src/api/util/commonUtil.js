@@ -4,7 +4,7 @@
 
 const HttpResponse = require('./httpResponse');
 const httpConstants = require('../constant/httpConstant');
-const logger = require('../../logger').getLogger({}, {})
+const logger = require('../../logger').getLogger({}, {});
 const url = require('url');
 module.exports = {
 

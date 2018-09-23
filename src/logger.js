@@ -41,16 +41,17 @@ const getLoggerConfig = (customConfig) => {
 
 };
 
-const getLogger = (logRotationParams, loggerConfig) => {
-    const size = logRotationParams['size'] || '50M';
-    const interval = logRotationParams['interval'] || '1d';
+rfs('application.log', getLogRotationConfig());
+rfs('error.log', getLogRotationConfig());
 
-    rfs('application.log', getLogRotationConfig(size, interval));
-    rfs('error.log', getLogRotationConfig(size, interval));
+log4js.configure(getLoggerConfig());
 
-    log4js.configure(getLoggerConfig(loggerConfig));
+const myLogger =  log4js.getLogger();
 
-    return log4js.getLogger();
+
+const getLogger = () => {
+
+    return myLogger;
 
 };
 
