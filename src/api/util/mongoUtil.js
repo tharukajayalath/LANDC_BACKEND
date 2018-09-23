@@ -72,5 +72,8 @@ module.exports = {
             Promise.reject(e);
         }
     }*/
+    getDBUrl: ()=>{
+        return url;
+    }
 
 };
